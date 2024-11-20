@@ -14,7 +14,7 @@ BLUE, RED, WHITE, YELLOW, MAGENTA, GREEN, END = '\33[94m', '\033[91m', '\33[97m'
 try:
     # check whether user is root
     if os.geteuid() != 0:
-        print("\n{}ERROR: KickThemOut must be run with root privileges. Try again with sudo:\n\t{}$ sudo python3 kickthemout.py{}\n".format(RED, GREEN, END))
+        print("\n{}ERROR: KickThemOut must be run with root privileges. Try again with :\n\t{}$ python3 kickthemout.py{}\n".format(RED, GREEN, END))
         os._exit(1)
 except:
     # then user is probably on windows
